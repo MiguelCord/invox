@@ -1,0 +1,107 @@
+<!doctype html>
+<html> 
+    <head>
+        <!----support of foreigh character--->
+        <meta charset="utf-8">
+        <!--IE Compatibility setting. It ensures IE uses the latest rendering engine-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MMP 310 - Portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <!--link the latest minified bootstrap stylesheet-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Compiled and minified CSS -->
+        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"-->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Karla:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+
+        
+    </head>
+        <!-- Beggining of the navbar -->
+    <nav class="navbar navbar-defaul navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toogle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="images/invox-logo.png" alt="invox logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div> <!-- .nav-collapse -->
+        </div> <!-- container -->   
+    </nav>
+    <body>
+           <div class="container">
+            <div class="row">
+               <div class="col-md-10">
+                    <article id="POST" class="">
+                        <header id="post-header">
+                            <h2 class="badge-item-title">This is the title</h2>
+                        </header>
+                        <div id="badge-post-contaner post-container">
+                            <img id="post-img" class="img-responsive text-center" src="images/creativity.png">
+                        </div>
+                    </article>
+                </div>
+               <div class="col-md-2">
+                    <div id="container-floating">
+                      <div id="floating-button" data-toggle="modal" data-placement="left" data-original-title="Create">
+                        <p class="plus">+</p>
+                        <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+                      </div>
+                   </div>
+                </div> 
+            </div>   
+            <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">x</span>
+                    <form class="form-signin modal-form" action="main.html">
+                            <div class="form-container text-center">
+                                <p class="text-center">Time to upload some pictures you creative beast!</p>
+                                <label for="title" class="sr-only">title</label>
+                                <input type="title" id="title" class="form-control input-title" placeholder="Title"> 
+                            </div>
+                        </form>  
+                        <input id="modal-input" class="btn btn-md btn-primary btn-block" type="input" value="upload img">
+                        <button  id="load-input" class="btn btn-md btn-primary btn-block" type="input" value="load">load</button>     
+                  </div>
+            </div>
+                
+            </div> <!-- container -->
+            <footer class="page-footer">
+                <div class="container">
+                    <nav role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="foot" href="about.html">About<span class="sr-only">(current)</span></a></li>
+                            <li><a class="foot" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                     <span class="copyright">&copy;2016 invox </span>
+                </div>
+            </footer>  
+        
+        <!--link the latest minified jQuery framework, necessary for using Bootstrap's JS plugings-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+        <!--link latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--Import jQuery before materialize.js-->
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script-->
+        <script type="text/javascript" src="script.js"></script>
+   </body>    
+</html>
