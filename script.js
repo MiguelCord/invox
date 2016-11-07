@@ -23,7 +23,7 @@ window.onclick = function(event) {
     }
 }
 
-/*--------- Input and load image -------- /*
+/*--------- Input and load image -------- */
 function main () {
     
     var inputFileToLoad = document.getElementById("modal-input");
