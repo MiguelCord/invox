@@ -1,3 +1,9 @@
+/* NAME: Miguel Cordero
+   COURSE: MMP 310
+   DATE: 11/6/2016
+*/
+
+
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("container-floating");
 var span = document.getElementsByClassName("close")[0];
@@ -17,15 +23,16 @@ window.onclick = function(event) {
 }
 
 function main () {
+    
     var inputFileToLoad = document.getElementById("modal-input");
     inputFileToLoad.type = "file";
     inputFileToLoad.id = "inputFileToLoad";
-    document.getElementById("modal-input").appendChild(inputFileToLoad);
+    document.getElementById("POST").appendChild(inputFileToLoad);
     
     var buttonLoadFile = document.getElementById("load-input");
     buttonLoadFile.onclick = loadImageFileAsURL;
     buttonLoadFile.textContent = "Load File";
-    document.getElementById("load-input").appendChild(buttonLoadFile);
+    document.getElementById("POST").appendChild(buttonLoadFile);
 }
 
 function loadImageFileAsURL()
@@ -42,7 +49,8 @@ function loadImageFileAsURL()
             {
                 var imageLoaded = document.createElement("img");
                 imageLoaded.src = fileLoadedEvent.target.result;
-                document.body.appendChild(imageLoaded);
+                document.getElementById("POST").appendChild(imageLoaded);
+                imageLoaded.className += "inputFileToLoad";
             };
             fileReader.readAsDataURL(fileToLoad);
         }

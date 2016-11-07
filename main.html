@@ -1,3 +1,7 @@
+<!-- NAME: Miguel Cordero
+      COURSE: MMP 310
+      DATE: 11/6/2016 -->
+
 <!doctype html>
 <html> 
     <head>
@@ -18,10 +22,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Karla:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-
-        
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
     </head>
         <!-- Beggining of the navbar -->
     <nav class="navbar navbar-defaul navbar-static-top">
@@ -33,68 +34,67 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="images/invox-logo.png" alt="invox logo"></a>
+                <a class="navbar-brand" href="main.html"><img class="img-responsive logo" src="images/invox-logo.png" alt="invox logo"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="index.html">Log out<span class="sr-only">(current)</span></a></li>
                 </ul>
             </div> <!-- .nav-collapse -->
-        </div> <!-- container -->   
+        </div> <!-- nav container -->   
     </nav>
     <body>
-           <div class="container">
+        <div class="container">                  <!-- Main section of the webpage -->
             <div class="row">
-               <div class="col-md-10">
+                <div class="col-md-10">
                     <article id="POST" class="">
-                        <header id="post-header">
+                        <label for="title" class="sr-only">title</label>
+                        <!--input type="title" id="title" class="form-control input-title" placeholder="Title"-->
+                       <!-- <header id="post-header">
                             <h2 class="badge-item-title">This is the title</h2>
                         </header>
                         <div id="badge-post-contaner post-container">
                             <img id="post-img" class="img-responsive text-center" src="images/creativity.png">
-                        </div>
-                    </article>
+                        </div>-->
+                    </article> 
                 </div>
-               <div class="col-md-2">
+                <div class="col-md-2">                      <!-- floating button -->
                     <div id="container-floating">
-                      <div id="floating-button" data-toggle="modal" data-placement="left" data-original-title="Create">
-                        <p class="plus">+</p>
-                        <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
-                      </div>
-                   </div>
+                        <div id="floating-button" data-toggle="modal" data-placement="left" data-original-title="Create">
+                            <p class="plus">+</p>
+                            <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+                        </div>
+                    </div>
                 </div> 
             </div>   
             <div id="myModal" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
+                <!-- Modal content -->
+                <div class="modal-content">
                     <span class="close">x</span>
                     <form class="form-signin modal-form" action="main.html">
-                            <div class="form-container text-center">
-                                <p class="text-center">Time to upload some pictures you creative beast!</p>
-                                <label for="title" class="sr-only">title</label>
-                                <input type="title" id="title" class="form-control input-title" placeholder="Title"> 
-                            </div>
-                        </form>  
-                        <input id="modal-input" class="btn btn-md btn-primary btn-block" type="input" value="upload img">
-                        <button  id="load-input" class="btn btn-md btn-primary btn-block" type="input" value="load">load</button>     
-                  </div>
-            </div>
-                
-            </div> <!-- container -->
-            <footer class="page-footer">
-                <div class="container">
-                    <nav role="navigation">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a class="foot" href="about.html">About<span class="sr-only">(current)</span></a></li>
-                            <li><a class="foot" href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                     <span class="copyright">&copy;2016 invox </span>
+                        <div class="form-container text-center">
+                            <p class="text-center">Time to upload some pictures you creative beast!</p>
+                            <label for="title" class="sr-only">title</label>
+                            <input type="title" id="title" class="form-control input-title" placeholder="Title"> 
+                        </div>
+                    </form>
+                    <!--input id="modal-text" class="btn btn-md btn-primary btn-block" type="text" value="upload img"-->
+                    <input id="modal-input" class="btn btn-md btn-primary btn-block" type="input" value="upload img">
+                    <button  id="load-input" class="btn btn-md btn-primary btn-block" type="input" value="load">load</button>     
                 </div>
-            </footer>  
-        
+            </div>    
+        </div> <!-- container -->
+        <footer class="page-footer">                    <!-- Footer -->
+            <div class="container">
+                <nav role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="foot" href="about.html">About<span class="sr-only">(current)</span></a></li>
+                        <li><a class="foot" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class="copyright">&copy;2016 invox </span>
+            </div>
+        </footer>  
         <!--link the latest minified jQuery framework, necessary for using Bootstrap's JS plugings-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>

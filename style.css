@@ -1,9 +1,14 @@
-/*---------- Font Families -----------
+/* NAME: Miguel Cordero
+   COURSE: MMP 310
+   DATE: 11/6/2016
+*/
 
+/*---------- Font Families -----------
 font-family: 'Karla', sans-serif; Bold
 font-family: 'Cabin Condensed', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
+
 body {
     background-color: #fcfcfc; /*#f9f9f9;*/
     margin: 0 0 100px;
@@ -22,7 +27,7 @@ html {
 }
 
 .icon-bar {
-    background-color: #ff4f5f; /*#e54e29;*/
+    background-color: #ff4f5f; 
 }
 
 a {
@@ -675,8 +680,8 @@ textarea:hover {
     border-radius: 50%;
     background: #db4437;
     position: fixed;
-    bottom: 60px;
-    right: 40px;
+    bottom: 80px;
+    right: 35px;
     cursor: pointer;
     box-shadow: 0px 2px 5px #666;
     z-index: 1;
@@ -705,8 +710,8 @@ textarea:hover {
   position: absolute;
   width: 70px;
   height: 70px;
-  bottom: 30px;
-  right: 30px;
+  bottom: 0;
+  right: 0;
   z-index: 50px;
 }
 
@@ -815,5 +820,11 @@ textarea:hover {
     width: 60px;
 }
 
-#load-input{
+.inputFileToLoad {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 460px;
+    width: 100%;
+    margin-top: 60px;
 }
