@@ -3,6 +3,7 @@
    DATE: 11/6/2016
 */
 
+/*------- Open and close modal. ------*/
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("container-floating");
@@ -22,6 +23,7 @@ window.onclick = function(event) {
     }
 }
 
+*/--------- Input and load image -------- /*
 function main () {
     
     var inputFileToLoad = document.getElementById("modal-input");
